@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta charset="utf-8" />
 <title>Instalații electrice profesionale</title>
-<meta name="description" content="Instalații electrice profesionale – execuție corectă, siguranță și lucrări finalizate impecabil. Sună acum pentru ofertă.">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <style>
+/* RESET */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #ffffff;
+  color: #2e2e2e;
+  line-height: 1.6;
 }
 
+/* HEADER */
 header {
-  background: #1f7a5c;
-  padding: 15px;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px;
   text-align: center;
 }
-
 header img {
-  height: 50px;
+  max-height: 60px;
 }
 
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-h1, h2 {
-  color: #1f7a5c;
-}
-
+/* HERO */
 .hero {
+  background: #f6f8f7;
+  padding: 80px 20px;
   text-align: center;
 }
-
+.hero h1 {
+  font-size: 36px;
+  color: #2f6f5f;
+  margin-bottom: 20px;
+}
 .hero p {
+  max-width: 700px;
+  margin: auto;
   font-size: 18px;
 }
 
-.buttons a {
+/* CTA */
+.cta {
+  margin-top: 30px;
+}
+.cta a {
   display: inline-block;
   margin: 10px;
-  padding: 15px 25px;
-  background: #1f7a5c;
-  color: #fff;
+  padding: 14px 28px;
+  border: 2px solid #2f6f5f;
+  color: #2f6f5f;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.cta a.primary {
+  background: #2f6f5f;
+  color: #ffffff;
 }
 
-.buttons a.whatsapp {
-  background: #25D366;
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+section h2 {
+  color: #2f6f5f;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+section p {
+  max-width: 800px;
 }
 
 /* SLIDER */
 .slider {
+  margin-top: 30px;
   overflow: hidden;
-  border-radius: 10px;
-  margin-top: 20px;
+  border-radius: 8px;
 }
-
 .slides {
   display: flex;
   transition: transform 0.6s ease;
 }
-
 .slides img {
   width: 100%;
+  height: 420px;
+  object-fit: cover;
   flex-shrink: 0;
-  border-radius: 10px;
 }
 
+/* FOOTER */
 footer {
-  background: #222;
-  color: #fff;
+  background: #2f6f5f;
+  color: #ffffff;
   text-align: center;
-  padding: 30px 20px;
+  padding: 60px 20px;
 }
-
 footer a {
-  color: #25D366;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
   display: block;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
-  .hero p {
-    font-size: 16px;
-  }
+  .hero h1 { font-size: 28px; }
+  .slides img { height: 260px; }
 }
 </style>
 </head>
@@ -107,17 +124,17 @@ footer a {
 
 <section class="hero">
   <h1>Instalații electrice profesionale</h1>
-  <p>De la prima fază până la lucrarea finalizată, sigur și corect.</p>
+  <p>Execuție corectă, sigură și estetică – de la prima fază până la lucrarea finalizată.</p>
 
-  <div class="buttons">
-    <a href="tel:0746146034">📞 Sună acum</a>
-    <a href="https://wa.me/407461460334" class="whatsapp">💬 WhatsApp</a>
+  <div class="cta">
+    <a href="tel:0746146034" class="primary">Sună acum</a>
+    <a href="mailto:tacom-electric@outlook.com">Trimite email</a>
   </div>
 </section>
 
 <section>
-  <h2>Faza 1 – Pozare cabluri și trasee electrice</h2>
-  <p>Lucrările încep cu o execuție ordonată și sigură.</p>
+  <h2>Faza 1 – Pozare cabluri</h2>
+  <p>Trasee corecte, organizare și respectarea normelor tehnice.</p>
 
   <div class="slider" data-slider>
     <div class="slides">
@@ -131,8 +148,8 @@ footer a {
 </section>
 
 <section>
-  <h2>Tablouri electrice – organizare și siguranță</h2>
-  <p>Montaj corect, etichetare clară și protecție adecvată.</p>
+  <h2>Tablouri electrice</h2>
+  <p>Montaj curat, etichetare și siguranță pe termen lung.</p>
 
   <div class="slider" data-slider>
     <div class="slides">
@@ -145,8 +162,8 @@ footer a {
 </section>
 
 <section>
-  <h2>Lucrări finalizate – iluminat și prize</h2>
-  <p>Rezultatul final: funcționalitate și estetică.</p>
+  <h2>Lucrări finalizate</h2>
+  <p>Iluminat, prize și finisaje finale.</p>
 
   <div class="slider" data-slider>
     <div class="slides">
@@ -161,22 +178,19 @@ footer a {
 
 <footer>
   <h2>Contact</h2>
-  <a href="tel:0746146034">📞 0746146034</a>
-  <a href="mailto:tacom-electric@outlook.com">✉ tacom-electric@outlook.com</a>
-  <a href="https://www.facebook.com/profile.php?id=61555282801893">Facebook</a>
-  <a href="https://www.instagram.com/tacomelectric/">Instagram</a>
+  <a href="tel:0746146034">0746146034</a>
+  <a href="mailto:tacom-electric@outlook.com">tacom-electric@outlook.com</a>
 </footer>
 
 <script>
 document.querySelectorAll('[data-slider]').forEach(slider => {
-  let index = 0;
+  let i = 0;
   const slides = slider.querySelector('.slides');
   const total = slides.children.length;
-
   setInterval(() => {
-    index = (index + 1) % total;
-    slides.style.transform = 'translateX(-' + (index * 100) + '%)';
-  }, 3000);
+    i = (i + 1) % total;
+    slides.style.transform = `translateX(-${i * 100}%)`;
+  }, 3500);
 });
 </script>
 
