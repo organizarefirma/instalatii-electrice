@@ -3348,3 +3348,47 @@ input, select, textarea {
     color: inherit;
 }
 
+/* Brand bar (logo + nume + telefon) */
+.brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75em 1.5em;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand img {
+    height: 55px;
+}
+
+.brand-name {
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.brand-phone a {
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+@media screen and (max-width: 736px) {
+
+    .brand-bar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .brand img {
+        height: 45px;
+    }
+}
+
