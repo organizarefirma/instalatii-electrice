@@ -3288,74 +3288,23 @@ input, select, textarea {
 
 /* Mobile (Portrait) */
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 736px) {
 
-		/* Icon */
+    .header-brand a {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 
-			.icon.major {
-				width: 4em;
-				height: 4em;
-				line-height: 4em;
-				box-shadow: 0 0 0 7px white, 0 0 0 8px #e0e0e0;
-			}
+    .brand-phone {
+        width: 100%;
+        font-size: 0.95em;
+    }
 
-				.icon.major:before {
-					font-size: 24px;
-				}
+    .brand-name {
+        font-size: 1em;
+    }
+}
 
-		/* Button */
-
-			input[type="submit"],
-			input[type="reset"],
-			input[type="button"],
-			button,
-			.button {
-				width: 100%;
-				display: block;
-			}
-
-		/* Box */
-
-			.box.highlight {
-				padding-left: calc(4em + 30px);
-			}
-
-			.box.post .inner {
-				margin-left: calc(30% + 20px);
-			}
-
-			.box.post .image {
-				width: 30%;
-			}
-
-		/* Banner */
-
-			#banner {
-				height: 20em;
-			}
-
-				#banner header {
-					padding: 20px;
-				}
-
-		/* Wrapper */
-
-			.wrapper {
-				padding: 2em 20px 1px 20px;
-			}
-
-		/* CTA */
-
-			#cta {
-				padding: 20px;
-			}
-
-		/* Footer */
-
-			#footer {
-				padding: 2em 20px;
-				text-align: left;
-			}
 
 	}
 #banner h2 {
@@ -3364,6 +3313,7 @@ input, select, textarea {
 }
 
 #banner p {
+	margin-top: 0.75em;
     line-height: 1.6;
 }
 #header {
@@ -3382,3 +3332,28 @@ input, select, textarea {
     text-decoration: none;
     color: inherit;
 }
+
+/* HEADER: logo + nume + telefon pe un singur rand */
+.header-brand a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-brand img {
+    height: 55px;
+}
+
+.brand-name {
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.brand-phone a {
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    color: inherit;
+}
+
