@@ -3301,7 +3301,7 @@ input, select, textarea {
     }
 
     .brand-name {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 }
 
@@ -3390,5 +3390,19 @@ input, select, textarea {
     .brand img {
         height: 45px;
     }
+}
+
+#banner {
+    padding: 6em 0 4em 0;
+}
+
+.icon.featured {
+    font-size: 3em; /* mai mari */
+    color: #2ecc71; /* verde profesional */
+}
+
+#nav > ul > li > a:hover,
+#nav > ul > li.current > a {
+    border-bottom-color: #2ecc71;
 }
 
