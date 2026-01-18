@@ -3318,11 +3318,6 @@ input, select, textarea {
 }
 
 
-#header h1 {
-    display: flex;
-    align-items: center;
-}
-
 .contact-top a {
     font-weight: 600;
     text-decoration: none;
