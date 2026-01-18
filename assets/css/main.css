@@ -3316,11 +3316,7 @@ input, select, textarea {
 	margin-top: 0.75em;
     line-height: 1.6;
 }
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 #header h1 {
     display: flex;
