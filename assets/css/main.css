@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #b5cc1c;
+		color: #474747;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -116,7 +116,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #b5cc1c;
+			color: #37c0fb;
 			border-bottom-color: transparent;
 		}
 
